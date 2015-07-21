@@ -1,8 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
 </head>
 <body>
 	<h1>My First Angular JS Project</h1>
+    <div ng-app ng-init="x=2;y=7">
+        Enter a value for x: <input type="text" ng-model="x"></input>
+        <br />
+        Enter a value for y: <input type="text" ng-model="y"></input>
+        <p>The product of {{ x }} and {{ y }} is <b>{{ x * y }}</b></p>
+    </div>
 </body>
 </html>
