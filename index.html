@@ -17,7 +17,7 @@
 <body class="container">
 	<h1>My First Angular JS Project</h1>
     
-        <form role="form" class="form-horizontal" ng-app ng-init="x=2;y=7">
+        <form role="form" class="form-horizontal" ng-app ng-init='x=2;y=7;arr=["a","3","x"]'>
             <div class="form-group">
                 <label for="x" class="control-label col-md-1">X = </label>
                 <div class="col-md-4">
@@ -32,7 +32,12 @@
             </div>
             <div class="jumbotron">
                 <p>The product of {{ x }} and {{ y }} is <b>{{ x * y }}</b></p>
-            </div>    
+            </div>
+            <div class="well">
+                <ul>
+                    <li ng-repeat="item in arr">{{ item }}</li>
+                </ul>
+            </div>
         </form>
         
     
