@@ -15,30 +15,46 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
 </head>
 <body class="container">
-	<h1>My First Angular JS Project</h1>
-    
-        <form role="form" class="form-horizontal" ng-app ng-init='x=2;y=7;arr=["a","3","x"]'>
-            <div class="form-group">
-                <label for="x" class="control-label col-md-1">X = </label>
-                <div class="col-md-4">
-                    <input class="form-control" type="text" ng-model="x"></input>
-                </div>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">My UI Project</a>
+        </div>
+        <div>
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="gemstore.html">Flatlander's Gem Store</a></li>
+            <li><a href="#">Page 2</a></li> 
+            <li><a href="#">Page 3</a></li> 
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <form role="form" class="form-horizontal" ng-app ng-init='x=2;y=7;arr=["a","3","x"]'>
+        <div class="form-group">
+            <label for="x" class="control-label col-md-1">X = </label>
+            <div class="col-md-4">
+                <input class="form-control" type="text" ng-model="x"></input>
             </div>
-            <div class="form-group">
-                <label for="y" class="control-label col-md-1">Y = </label>
-                <div class="col-md-4">
-                    <input class="form-control" type="text" ng-model="y"></input>
-                </div>
+        </div>
+        <div class="form-group">
+            <label for="y" class="control-label col-md-1">Y = </label>
+            <div class="col-md-4">
+                <input class="form-control" type="text" ng-model="y"></input>
             </div>
-            <div class="jumbotron">
-                <p>The product of {{ x }} and {{ y }} is <b>{{ x * y }}</b></p>
-            </div>
-            <div class="well">
-                <ul>
-                    <li ng-repeat="item in arr">{{ item }}</li>
-                </ul>
-            </div>
-        </form>
+        </div>
+        <div class="jumbotron">
+            <p>The sum of {{ x }} and {{ y }} is <b>{{ x + y }}</b></p>
+            <p>{{ x }} - {{ y }} is <b>{{ x - y }}</b></p>
+            <p>The product of {{ x }} and {{ y }} is <b>{{ x * y }}</b></p>
+            <p> {{ x }} / {{ y }} is <b>{{ x / y }}</b></p>
+        </div>
+        <div class="well">
+            <ul>
+                <li ng-repeat="item in arr">{{ item }}</li>
+            </ul>
+        </div>
+    </form>
         
     
 </body>
