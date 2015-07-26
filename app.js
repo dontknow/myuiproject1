@@ -1,30 +1,44 @@
 (function() {
     var app = angular.module('store', []);
     
-    app.controller('StoreController', function() {
-        this.products = gems;
+    app.controller('StoreController',['$http', function($http) {
+        var store = this;
+        
+        store.products = [];
+        
+        $http.get('products.json').success(function(data) {
+            store.products = data;
+        });        
+    }]);
+    
+    app.controller('PanelController', function() {
+        this.tab = null;
+        
+        this.selectTab = function(tabValue) {
+            this.tab = tabValue;
+        };
+        
+        this.isSelected = function(checkTab) {
+            return this.tab === checkTab;
+        };
     });
     
-    var gems = [{
-        name: "Kohinoor",
-        price: 2.95,
-        description: 'Not a gem',
-        canPurchase: false,
-        soldOut: true
-    },
-                {
-        name: "Quartz",
-        price: 149.95,
-        description: 'Not a gem',
-        canPurchase: true,
-        soldOut: false
-    },
-                {
-        name: "Ruby",
-        price: 49.95,
-        description: 'Not a gem',
-        canPurchase: false,
-        soldOut: false
-    }]
+    app.controller('ReviewController', function() {
+        this.review = {};
+        
+        this.submitThisReview = function (product) {
+            product.reviews.push(this.review);
+            this.review = {};
+        };
+    });
+    
+    app.directive('productTitle', function() {
+        return {
+            restrict: 'E',
+            templateUrl: 'product-title.html'
+        };
+    });
+    
+   
 })();
 

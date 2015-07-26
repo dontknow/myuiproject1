@@ -1,0 +1,82 @@
+[{
+        name: "Kohinoor",
+        price: 2.95,
+        description: 'Not a gem',
+        canPurchase: false,
+        soldOut: true,
+        images: [{
+            thumb: 'https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTSRRXJy_KdAlVTtfB8mO3wdmb3XJ8BZmZBvBg_mfDL2WIKmQA4Iw',
+            full: 'http://www.dakotamatrix.com/images/products/quartz32301a.jpg'}],
+        reviews: [
+            {
+                stars: 4,
+                reviewBody: "This product is good",
+                reviewerEmail: "reviewer1@nowhere.com"
+            },
+            {
+                stars: 5,
+                reviewBody: "This product is excellent",
+                reviewerEmail: "reviewer2@nowhere.com"
+            },
+            {
+                stars: 3,
+                reviewBody: "This product is OK",
+                reviewerEmail: "reviewer3@nowhere.com"
+            }
+        ]
+        
+    },
+                {
+        name: "Quartz",
+        price: 149.95,
+        description: 'Not a gem',
+        canPurchase: true,
+        soldOut: false,
+        images: [{
+            thumb: 'https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTSRRXJy_KdAlVTtfB8mO3wdmb3XJ8BZmZBvBg_mfDL2WIKmQA4Iw',
+            full: 'http://www.dakotamatrix.com/images/products/quartz32301a.jpg'}],
+        reviews: [
+            {
+                stars: 4,
+                reviewBody: "This product is good",
+                reviewerEmail: "reviewer1@nowhere.com"
+            },
+            {
+                stars: 3,
+                reviewBody: "This product is OK",
+                reviewerEmail: "reviewer3@nowhere.com"
+            },
+            {
+                stars: 5,
+                reviewBody: "This product is excellent",
+                reviewerEmail: "reviewer2@nowhere.com"
+            }
+        ]
+    },
+                {
+        name: "Ruby",
+        price: 49.95,
+        description: 'Not a gem',
+        canPurchase: false,
+        soldOut: false,
+        images: [   {
+            thumb: 'https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS1s4L6WPbboV_uWlPCYzVQneZs1UfxhsJ2uKJ__DAntjKzRqIHKA',
+            full: 'https://visualstudiomagazine.com/blogs/onward-and-upward/2013/04/~/media/ECG/visualstudiomagazine/Images/introimages/VSMWardAzureRuby.ashx'}],
+        reviews: [
+            {
+                stars: 4,
+                reviewBody: "This product is good",
+                reviewerEmail: "reviewer1@nowhere.com"
+            },
+            {
+                stars: 5,
+                reviewBody: "This product is excellent",
+                reviewerEmail: "reviewer2@nowhere.com"
+            },
+            {
+                stars: 3,
+                reviewBody: "This product is OK",
+                reviewerEmail: "reviewer3@nowhere.com"
+            }
+        ]
+    }]
